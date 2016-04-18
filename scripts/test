@@ -1,0 +1,9 @@
+#!/bin/bash
+
+printf "Running tests:\n\n"
+jest
+testResult=$?
+
+echo "Finished tests."
+
+! (( $testResult ))
